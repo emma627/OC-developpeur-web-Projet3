@@ -1,0 +1,278 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+
+
+.enterTitle h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top:25px;
+    margin-bottom: 25px;
+   
+}
+
+
+/* flex */
+.title{
+    display:flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .barre-left{
+    flex:30%;
+    }
+    .barre-right{
+    flex:30%;
+    }
+    .titre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:40%;
+    }
+}
+
+.entree{
+    display: flex;
+    width:90%;
+    margin:auto;
+    .cuisine-gauche{
+    flex:90%;
+    }
+    .prix-droite{
+     flex:10%;
+    text-align: right;
+    }
+}
+
+.plat{
+    display: flex;
+    width:90%;
+    margin:auto;
+    .cuisine-gauche{
+    flex:90%;
+    }
+    .prix-droite{
+     flex:10%;
+     text-align: right;
+    }
+}
+
+.dessert{
+    display: flex;
+    width:90%;
+    margin:auto;
+    .cuisine-gauche{
+        flex:90%;
+        }
+        .prix-droite{
+         flex:10%;
+         text-align: right;
+        }
+}
+
+/*  responsive index  */
+
+@media  screen and (min-width:993px){
+    #container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+    }
+
+    #menu-enchantee{
+        @include menus(250px,400px);
+        @include menusText(20px);
+        
+    }
+    #menu-chic{
+        @include menus(250px,400px);
+        @include menusText(20px);
+        h3{
+            font-size: 16px;
+        }
+      
+    }
+    #menu-delice{
+        @include menus(250px,400px);
+        @include menusText(20px);
+    }
+    #menu-palette{
+        @include menus(250px,400px);
+        @include menusText(20px);    
+    }
+}
+
+
+
+@media  screen and (max-width:992px){
+    #container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    #menu-enchantee{
+        @include menus(350px,550px);
+        @include menusText(30px);
+    }
+    #menu-chic{
+        @include menus(350px,550px);
+        @include menusText(30px);
+        h3{
+            font-size: 20px;
+            
+        }
+    }
+    #menu-delice{
+        @include menus(350px,550px);
+        @include menusText(30px);
+    }
+    #menu-palette{
+        @include menus(350px,550px);
+        @include menusText(30px);
+    }
+}
+
+@media screen and (max-width:576px){
+    #container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+        #menu-enchantee{
+            @include menus(300px,400px);
+            @include menusText(25px);
+            
+        }
+        #menu-chic{
+            @include menus(300px,400px);
+            @include menusText(25px);
+        }
+        #menu-delice{
+            @include menus(300px,400px);
+            @include menusText(25px);
+        }
+        #menu-palette{
+            @include menus(300px,400px);
+            @include menusText(25px);
+        }     
+    
+}
+
+/* responsive text,line-height and margin,flex-direction changes when the screen is below 720px */
+@media screen and (min-width:993px){
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 28px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 3rem;
+    }
+}
+@media screen and (max-width:992px){
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 2.8rem;
+    }
+    #menu1Entrees,#menu1Plats,#menu1Desserts, 
+    #menu2Entrees,#menu2Plats,#menu2Desserts, 
+    #menu3Entrees,#menu3Plats,#menu3Desserts,
+    #menu4Entrees,#menu4Plats,#menu4Desserts{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:850px){
+    h3{
+        font-size: 28px;
+    }
+    h4{
+        font-size: 23px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 2.5rem;
+    }
+    #menu1Entrees,#menu1Plats,#menu1Desserts, 
+    #menu2Entrees,#menu2Plats,#menu2Desserts, 
+    #menu3Entrees,#menu3Plats,#menu3Desserts,
+    #menu4Entrees,#menu4Plats,#menu4Desserts{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:720px){
+    #wrap-menuEchantee{
+        @include changeFlexDirectionToColumn;
+        }
+    #wrap-menuChic{
+        @include changeFlexDirectionToColumn;
+    }
+    #wrap-menuDelice{
+        @include changeFlexDirectionToColumn;
+    }
+    #wrap-menuPalette{
+        @include changeFlexDirectionToColumn;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 11px;
+        line-height: 2rem;
+    }
+    #menu1Entrees,#menu1Plats,#menu1Desserts, 
+    #menu2Entrees,#menu2Plats,#menu2Desserts, 
+    #menu3Entrees,#menu3Plats,#menu3Desserts,
+    #menu4Entrees,#menu4Plats,#menu4Desserts{
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width:547px){
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    p{
+        font-size: 9px;
+        line-height: 1.5rem;
+    }
+    
+    #menu1Entrees,#menu1Plats,#menu1Desserts, 
+    #menu2Entrees,#menu2Plats,#menu2Desserts, 
+    #menu3Entrees,#menu3Plats,#menu3Desserts,
+    #menu4Entrees,#menu4Plats,#menu4Desserts{
+        margin-bottom: 5px;
+    }
+}
+/*--------------------------------*/
+
+
+#container > div {
+    &:hover{
+        opacity:0.7;
+    }
+}

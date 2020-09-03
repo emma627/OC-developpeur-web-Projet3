@@ -1,0 +1,70 @@
+
+#menu-enchantee {
+    background-color:$menuEnchantee;
+    img{
+        width:23%;
+    }
+h3{
+    margin-top: -30px;
+    font-size: 30px;
+    color:$enchanteeBrown;
+}
+p{
+    margin-top: -5px;
+    color:$enchanteeBrown;
+}
+}
+
+#menu-chic {
+    background-color:$menuChic;
+    h3{ 
+        font-size: 30px;
+        @include menu2GradientColor;
+}
+p{
+    color:$menu2IndexCafeColor;
+}
+}
+
+#menu-delice {
+    background-color: $menuDelice;
+    h3{
+        font-size: 25px;
+        @include menu3GradientColor; 
+}
+p{
+    color:$menu3IndexBlueColor;
+}
+}
+
+#menu-palette {
+    background-color: $menuPalette;
+    h3{
+        font-size: 25px;
+        @include menu4GradientColor;
+}
+p{
+    color:$menu4IndexGreenColor;
+}
+}
+
+/* partie button prochainemet */
+#container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+#prochainement{
+  border-radius: 0.5rem;
+  width:250px;
+  height:70px;
+  background-color:$colorGreen;
+  color:$textYellow;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------------------------*/

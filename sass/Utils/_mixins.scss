@@ -1,0 +1,90 @@
+
+@mixin menus($width,$height){
+ 
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 4rem;
+  width:$width;
+  height:$height;
+  margin-top: 20px;
+  margin-bottom:20px;
+  box-shadow:1px 1px 10px -3px rgba(148,144,133,1);
+  
+}
+
+@mixin menusText($menusFontSize){
+  a{
+    text-decoration: none;
+    line-height:3rem;
+    font-size: $menusFontSize;
+    transform: scale(1);
+    transition: transform  2000ms ;
+   
+    &:hover{
+    transform: scale(1.3);
+    }
+  }
+}
+
+@mixin changeFlexDirectionToColumn{
+  .entree,.plat,.dessert{
+    display: flex;
+    flex-direction: column;
+    .cuisine-gauche{
+       text-align: center;
+   }
+   .prix-droite{
+       text-align: center;
+   }
+   }
+   .dessert{
+       text-align: center;
+   }
+}
+
+@mixin wrapSetForEach{
+  width:80%;
+  margin:auto;
+  display:flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  box-shadow:1px 1px 10px -3px rgba(148,144,133,1);
+  margin-bottom: 150px;
+  
+}
+
+@mixin menu2GradientColor{
+    background: linear-gradient(to right,#B8860B, #9608C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+@mixin menu3GradientColor{
+  background: linear-gradient(to right, #155BA4, #28A6DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+@mixin menu4GradientColor{
+  background: linear-gradient(to right, #43C117, #9BE98D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+@mixin wiggle {
+  animation:shake 0.5s infinite;
+  @keyframes shake{
+    10%, 90%, 40%, 60% {
+        transform: translate3d(4px, 0,0);
+      }
+    20%, 80%, 30%, 50%, 70% {
+    transform: translate3d(-4px, 0,0);
+    }
+      
+}
+}

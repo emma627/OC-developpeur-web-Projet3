@@ -1,0 +1,30 @@
+#footer{
+    display:flex;
+    flex-direction: row;
+    background-color: $colorGreen;
+    height:15vh;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    
+    #mention{
+        margin-left:15px;
+        &:hover{
+            @include wiggle;
+        }
+    }
+    #contact{
+       margin-right:15px;
+       &:hover{
+        @include wiggle;
+       }
+    }
+    h2{
+        color:$textYellow;
+        font-size: 30px;
+    }
+}
+

@@ -1,0 +1,50 @@
+/* font and color */
+#wrap-menuDelice{
+    h3{
+        font-family: 'Parisienne', cursive;
+        @include menu3GradientColor;
+    }
+    h4{
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+       
+    }
+    p{
+        font-family: 'Kalam', cursive;
+    }
+    }
+/*--------------------------------*/
+    
+
+#wrap-menuDelice{
+    background-color: $menuDelice;
+    @include wrapSetForEach;
+    
+}
+
+
+
+/* article top entrées plats desserts  */
+#menu3Top{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+ 
+#menu3Entrees{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+    
+#menu3Plats{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+#menu3Desserts{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+    

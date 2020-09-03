@@ -1,0 +1,70 @@
+
+
+#wrap-menuEchantee{
+    background-color: $menuEnchantee;
+    color:$enchanteeBrown;
+    @include wrapSetForEach;
+}
+
+/* article top entrées plats desserts bottom */
+
+    #menu1Top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:30%;
+            margin-top:50px;
+            
+        }
+        h3{
+            font-weight: bold;
+        }
+    }
+
+
+#menu1Entrees{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+    .entree{
+        width:100%;
+    }
+    
+}
+    
+#menu1Plats{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+    .plat{
+        width:100%;
+    }
+}
+
+#menu1Desserts{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+    .dessert{
+        width:100%;
+    }
+}
+    
+#menu1bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 35px;
+    img{
+    width:15%;
+    margin-right: 5px;
+    }
+    h3{
+        font-weight: bold;
+    }
+}
+/*--------------------------------*/
+
+

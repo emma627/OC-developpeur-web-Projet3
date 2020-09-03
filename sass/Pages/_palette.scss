@@ -1,0 +1,49 @@
+/* font  and color */
+#wrap-menuPalette{
+    h3{
+        font-family: 'Kaushan Script', cursive;
+        @include menu4GradientColor;
+    }
+    h4{
+        font-family: 'Kalam', cursive;
+        font-weight: bold;
+       
+    }
+    p{
+        font-family: 'Kalam', cursive;
+    }
+    }
+/*--------------------------------*/
+    
+
+#wrap-menuPalette{
+    background-color: $menuPalette;
+    @include wrapSetForEach;
+}
+  
+
+/* article top entrées plats desserts */
+#menu4Top{
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+
+#menu4Entrees{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+#menu4Plats{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+#menu4Desserts{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+    

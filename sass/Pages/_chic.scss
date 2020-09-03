@@ -1,0 +1,69 @@
+/* font and color */
+
+#wrap-menuChic {
+    h3{
+        @include menu2GradientColor;
+         font-family: 'Croissant One', cursive;
+     
+     }
+     h4{
+         font-family: 'Spectral', serif;
+         font-weight: bold;
+     }
+     p{
+         font-family: 'Merriweather', serif;
+     }
+     }
+     
+         #menu2Entrees{
+             h4,p{
+                 color:$menu2EntreeColor;
+             }
+         }
+         #menu2Plats{
+             h4,p{
+                 color:$menu2PlatColor;
+             }
+         }
+         #menu2Desserts{
+             h4,p{
+                 color:$menu2DessertColor;
+             }
+         }
+     /*--------------------------------*/
+  
+   
+
+#wrap-menuChic{
+    background-color: $menuChic;
+    @include wrapSetForEach;
+}
+
+
+/* article top entrées plats desserts  */
+#menu2Top{
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+#menu2Entrees{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+#menu2Plats{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+#menu2Desserts{
+    display: flex;
+    flex-direction:column;
+    width:90%;
+}
+
+/*--------------------------------*/
+
