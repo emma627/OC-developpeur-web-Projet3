@@ -48,6 +48,13 @@ p{
 }
 }
 
+#container > div {
+  &:hover{
+      opacity:0.7;
+  }
+}
+
+
 /* partie button prochainemet */
 #container2{
     display:flex;

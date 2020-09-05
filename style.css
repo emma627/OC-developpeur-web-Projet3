@@ -180,6 +180,10 @@ td:not([align]), th:not([align]) {
   color: #42ae3b;
 }
 
+#container > div:hover {
+  opacity: 0.7;
+}
+
 /* partie button prochainemet */
 #container2 {
   display: flex;
@@ -428,7 +432,7 @@ td:not([align]), th:not([align]) {
     text-align: center;
     line-height: 4rem;
     width: 350px;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px -3px #949085;
@@ -452,7 +456,7 @@ td:not([align]), th:not([align]) {
     text-align: center;
     line-height: 4rem;
     width: 350px;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px -3px #949085;
@@ -479,7 +483,7 @@ td:not([align]), th:not([align]) {
     text-align: center;
     line-height: 4rem;
     width: 350px;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px -3px #949085;
@@ -503,7 +507,7 @@ td:not([align]), th:not([align]) {
     text-align: center;
     line-height: 4rem;
     width: 350px;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px -3px #949085;
@@ -779,10 +783,6 @@ td:not([align]), th:not([align]) {
   }
 }
 /*--------------------------------*/
-#container > div:hover {
-  opacity: 0.7;
-}
-
 #wrap-menuEchantee {
   background-color: #fbdcdb;
   color: #3f130e;

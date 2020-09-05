@@ -79,7 +79,6 @@
 }
 
 /*  responsive index  */
-
 @media  screen and (min-width:993px){
     #container{
         display:flex;
@@ -87,7 +86,6 @@
         justify-content: space-around;
         flex-wrap: wrap; 
     }
-
     #menu-enchantee{
         @include menus(250px,400px);
         @include menusText(20px);
@@ -99,7 +97,6 @@
         h3{
             font-size: 16px;
         }
-      
     }
     #menu-delice{
         @include menus(250px,400px);
@@ -122,11 +119,11 @@
     }
     
     #menu-enchantee{
-        @include menus(350px,550px);
+        @include menus(350px,480px);
         @include menusText(30px);
     }
     #menu-chic{
-        @include menus(350px,550px);
+        @include menus(350px,480px);
         @include menusText(30px);
         h3{
             font-size: 20px;
@@ -134,11 +131,11 @@
         }
     }
     #menu-delice{
-        @include menus(350px,550px);
+        @include menus(350px,480px);
         @include menusText(30px);
     }
     #menu-palette{
-        @include menus(350px,550px);
+        @include menus(350px,480px);
         @include menusText(30px);
     }
 }
@@ -274,8 +271,3 @@
 /*--------------------------------*/
 
 
-#container > div {
-    &:hover{
-        opacity:0.7;
-    }
-}
