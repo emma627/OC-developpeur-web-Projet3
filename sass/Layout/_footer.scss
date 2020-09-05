@@ -10,21 +10,28 @@
     right:0;
     bottom:0;
     
-    #mention{
+    #mention {
         margin-left:15px;
+        a{
+            text-decoration: none;
+            color:$textYellow;
+            font-size: 30px;
+        }
         &:hover{
             @include wiggle;
         }
     }
     #contact{
        margin-right:15px;
+       a{
+        text-decoration: none;
+        color:$textYellow;
+        font-size: 30px;
+    }
        &:hover{
         @include wiggle;
        }
     }
-    h2{
-        color:$textYellow;
-        font-size: 30px;
-    }
+    
 }
 

@@ -1,0 +1,25 @@
+
+  
+  #legalcontent{
+      width:90%;
+      margin:auto;
+      margin-bottom: 150px;
+      h1.legal_text{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      
+      p.legal_text {
+        text-align: justify;
+      }
+      
+      .bold_legal{
+        font-weight: bold;
+      }
+      p{
+         line-height: normal;
+      }
+    
+  }

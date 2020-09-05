@@ -191,8 +191,8 @@ td:not([align]), th:not([align]) {
 
 #prochainement {
   border-radius: 0.5rem;
-  width: 250px;
-  height: 70px;
+  width: 300px;
+  height: 90px;
   background-color: #3da17a;
   color: #ffd000;
   font-size: 25px;
@@ -201,7 +201,34 @@ td:not([align]), th:not([align]) {
   align-items: center;
 }
 
-/*-----------------------------*/
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #ffd000;
+  transform-origin: center;
+  animation: dot-animation 3s infinite;
+}
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes dot-animation {
+  0%, 100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.5);
+    background-color: #ffd000;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -242,6 +269,7 @@ td:not([align]), th:not([align]) {
 }
 .entree .cuisine-gauche {
   flex: 90%;
+  white-space: nowrap;
 }
 .entree .prix-droite {
   flex: 10%;
@@ -255,6 +283,7 @@ td:not([align]), th:not([align]) {
 }
 .plat .cuisine-gauche {
   flex: 90%;
+  white-space: nowrap;
 }
 .plat .prix-droite {
   flex: 10%;
@@ -268,6 +297,7 @@ td:not([align]), th:not([align]) {
 }
 .dessert .cuisine-gauche {
   flex: 90%;
+  white-space: nowrap;
 }
 .dessert .prix-droite {
   flex: 10%;
@@ -596,7 +626,7 @@ td:not([align]), th:not([align]) {
 /* responsive text,line-height and margin,flex-direction changes when the screen is below 720px */
 @media screen and (min-width: 993px) {
   h3 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   h4 {
@@ -610,7 +640,7 @@ td:not([align]), th:not([align]) {
 }
 @media screen and (max-width: 992px) {
   h3 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   h4 {
@@ -631,7 +661,7 @@ td:not([align]), th:not([align]) {
 }
 @media screen and (max-width: 850px) {
   h3 {
-    font-size: 28px;
+    font-size: 40px;
   }
 
   h4 {
@@ -708,7 +738,7 @@ td:not([align]), th:not([align]) {
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   h4 {
@@ -833,6 +863,7 @@ td:not([align]), th:not([align]) {
 #wrap-menuChic h4 {
   font-family: "Spectral", serif;
   font-weight: bold;
+  white-space: nowrap;
 }
 #wrap-menuChic p {
   font-family: "Merriweather", serif;
@@ -898,6 +929,7 @@ td:not([align]), th:not([align]) {
 #wrap-menuDelice h4 {
   font-family: "Indie Flower", cursive;
   font-weight: bold;
+  white-space: nowrap;
 }
 #wrap-menuDelice p {
   font-family: "Kalam", cursive;
@@ -1007,6 +1039,11 @@ td:not([align]), th:not([align]) {
 #footer #mention {
   margin-left: 15px;
 }
+#footer #mention a {
+  text-decoration: none;
+  color: #ffd000;
+  font-size: 30px;
+}
 #footer #mention:hover {
   animation: shake 0.5s infinite;
 }
@@ -1021,6 +1058,11 @@ td:not([align]), th:not([align]) {
 #footer #contact {
   margin-right: 15px;
 }
+#footer #contact a {
+  text-decoration: none;
+  color: #ffd000;
+  font-size: 30px;
+}
 #footer #contact:hover {
   animation: shake 0.5s infinite;
 }
@@ -1032,9 +1074,26 @@ td:not([align]), th:not([align]) {
     transform: translate3d(-4px, 0, 0);
   }
 }
-#footer h2 {
-  color: #ffd000;
-  font-size: 30px;
+
+#legalcontent {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+#legalcontent h1.legal_text {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#legalcontent p.legal_text {
+  text-align: justify;
+}
+#legalcontent .bold_legal {
+  font-weight: bold;
+}
+#legalcontent p {
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

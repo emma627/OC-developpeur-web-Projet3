@@ -4,11 +4,13 @@
     h3{
         @include menu2GradientColor;
          font-family: 'Croissant One', cursive;
+       
      
      }
      h4{
          font-family: 'Spectral', serif;
          font-weight: bold;
+         white-space: nowrap;
      }
      p{
          font-family: 'Merriweather', serif;

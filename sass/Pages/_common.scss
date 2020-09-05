@@ -42,6 +42,7 @@
     margin:auto;
     .cuisine-gauche{
     flex:90%;
+    white-space: nowrap;
     }
     .prix-droite{
      flex:10%;
@@ -55,6 +56,7 @@
     margin:auto;
     .cuisine-gauche{
     flex:90%;
+    white-space: nowrap;
     }
     .prix-droite{
      flex:10%;
@@ -68,6 +70,7 @@
     margin:auto;
     .cuisine-gauche{
         flex:90%;
+        white-space: nowrap;
         }
         .prix-droite{
          flex:10%;
@@ -171,7 +174,7 @@
 /* responsive text,line-height and margin,flex-direction changes when the screen is below 720px */
 @media screen and (min-width:993px){
     h3{
-        font-size: 30px;
+        font-size: 50px;
     }
     h4{
         font-size: 28px;
@@ -183,7 +186,7 @@
 }
 @media screen and (max-width:992px){
     h3{
-        font-size: 30px;
+        font-size: 45px;
     }
     h4{
         font-size: 25px;
@@ -202,7 +205,7 @@
 }
 @media screen and (max-width:850px){
     h3{
-        font-size: 28px;
+        font-size: 40px;
     }
     h4{
         font-size: 23px;
@@ -232,7 +235,7 @@
         @include changeFlexDirectionToColumn;
     }
     h3{
-        font-size: 25px;
+        font-size: 35px;
     }
     h4{
         font-size: 20px;
