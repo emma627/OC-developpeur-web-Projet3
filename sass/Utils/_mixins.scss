@@ -80,7 +80,7 @@
   position: relative;
   text-decoration: none;
   color: $color;
-  padding: 5px;
+  margin-top:-12px;
   &:after{
       content: "";
       position: absolute;
@@ -97,7 +97,7 @@
   }
 }
 
-
+/* effet wiggle dans le footer */
 @mixin wiggle {
   animation:shake 0.5s infinite;
   @keyframes shake{

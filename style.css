@@ -112,6 +112,7 @@ td:not([align]), th:not([align]) {
 
 /*--------------------------------*/
 /* soulignement */
+/* effet wiggle dans le footer */
 #header {
   background-color: #3da17a;
   height: 30vh;
@@ -859,7 +860,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #3f130e;
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_enchantee:after {
   content: "";
@@ -947,7 +948,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #996a1d;
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_chic_entree:after {
   content: "";
@@ -968,7 +969,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #b186ad;
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_chic_plat:after {
   content: "";
@@ -989,7 +990,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #6c62df;
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_chic_dessert:after {
   content: "";
@@ -1064,7 +1065,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: linear-gradient(to right, #155BA4, #28A6DC);
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_delice:after {
   content: "";
@@ -1137,7 +1138,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: linear-gradient(to right, #43C117, #9BE98D);
-  padding: 5px;
+  margin-top: -12px;
 }
 .titre_palette:after {
   content: "";
