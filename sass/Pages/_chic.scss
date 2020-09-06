@@ -69,3 +69,18 @@
 
 /*--------------------------------*/
 
+
+
+
+/* soulignement */
+.titre_chic_entree{
+    @include soulignement($menu2EntreeColor);
+}
+
+.titre_chic_plat{
+    @include soulignement($menu2PlatColor);
+}
+
+.titre_chic_dessert{
+    @include soulignement($menu2DessertColor);
+}

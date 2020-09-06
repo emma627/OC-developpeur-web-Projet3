@@ -74,6 +74,30 @@
 
 }
 
+
+/* soulignement */
+@mixin soulignement($color) {
+  position: relative;
+  text-decoration: none;
+  color: $color;
+  padding: 5px;
+  &:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      border-radius: 50%;
+      background: $color;
+      transition: width 1s ease-in-out;
+    }
+  &:hover:after {
+      width: 100%;
+  }
+}
+
+
 @mixin wiggle {
   animation:shake 0.5s infinite;
   @keyframes shake{

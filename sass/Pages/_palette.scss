@@ -47,3 +47,6 @@
     width:90%;
 }
     
+.titre_palette{
+    @include soulignement(linear-gradient(to right, #43C117, #9BE98D));
+}

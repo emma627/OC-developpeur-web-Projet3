@@ -67,4 +67,7 @@
 }
 /*--------------------------------*/
 
-
+/* soulignement */
+.titre_enchantee{
+    @include soulignement($enchanteeBrown);
+}
