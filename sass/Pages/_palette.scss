@@ -46,7 +46,9 @@
     flex-direction:column;
     width:90%;
 }
-    
+   
+
+/* soulignement */
 .titre_palette{
     @include soulignement(linear-gradient(to right, #43C117, #9BE98D));
 }

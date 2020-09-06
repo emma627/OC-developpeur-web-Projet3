@@ -1134,6 +1134,7 @@ td:not([align]), th:not([align]) {
   width: 90%;
 }
 
+/* soulignement */
 .titre_palette {
   position: relative;
   text-decoration: none;
