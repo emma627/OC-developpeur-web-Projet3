@@ -860,7 +860,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #3f130e;
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_enchantee:after {
   content: "";
@@ -948,7 +948,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #996a1d;
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_chic_entree:after {
   content: "";
@@ -969,7 +969,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #b186ad;
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_chic_plat:after {
   content: "";
@@ -990,7 +990,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: #6c62df;
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_chic_dessert:after {
   content: "";
@@ -1065,7 +1065,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: linear-gradient(to right, #155BA4, #28A6DC);
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_delice:after {
   content: "";
@@ -1139,7 +1139,7 @@ td:not([align]), th:not([align]) {
   position: relative;
   text-decoration: none;
   color: linear-gradient(to right, #43C117, #9BE98D);
-  margin-top: -12px;
+  margin-top: -5px;
 }
 .titre_palette:after {
   content: "";
