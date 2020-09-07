@@ -55,7 +55,7 @@ td:not([align]), th:not([align]) {
 /* menu 3 le délice des papilles color,gradient menu color se trouve dans la partie mixin */
 /* menu 4 la palette du goût color,gradient menu color se trouve dans la partie mixin*/
 /*header footer prochainement font*/
-#header a {
+#header-content a {
   font-family: "Work Sans", sans-serif;
 }
 
@@ -113,14 +113,14 @@ td:not([align]), th:not([align]) {
 /*--------------------------------*/
 /* soulignement */
 /* effet wiggle dans le footer */
-#header {
+#header-content {
   background-color: #3da17a;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#header a {
+#header-content a {
   text-decoration: none;
   color: #ffd000;
   font-size: 85px;
@@ -144,7 +144,7 @@ td:not([align]), th:not([align]) {
 }
 
 #menu-chic {
-  background-color: #fad8de;
+  background-color: #fff5fe;
 }
 #menu-chic h3 {
   font-size: 30px;
@@ -907,7 +907,7 @@ td:not([align]), th:not([align]) {
 
 /*--------------------------------*/
 #wrap-menuChic {
-  background-color: #fad8de;
+  background-color: #fff5fe;
   width: 80%;
   margin: auto;
   display: flex;
