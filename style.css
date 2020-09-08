@@ -920,6 +920,7 @@ td:not([align]), th:not([align]) {
 
 /* article top entrées plats desserts  */
 #menu2Top {
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -1092,6 +1093,7 @@ td:not([align]), th:not([align]) {
 #wrap-menuPalette h4 {
   font-family: "Kalam", cursive;
   font-weight: bold;
+  white-space: nowrap;
 }
 #wrap-menuPalette p {
   font-family: "Kalam", cursive;
