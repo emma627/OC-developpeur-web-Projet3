@@ -63,7 +63,7 @@ td:not([align]), th:not([align]) {
   font-family: "Poppins", sans-serif;
 }
 
-#footer h2 {
+#footer_content h2 {
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -1158,7 +1158,7 @@ td:not([align]), th:not([align]) {
   width: 100%;
 }
 
-#footer {
+#footer_content {
   display: flex;
   flex-direction: row;
   background-color: #3da17a;
@@ -1170,15 +1170,15 @@ td:not([align]), th:not([align]) {
   right: 0;
   bottom: 0;
 }
-#footer #mention {
+#footer_content #mention {
   margin-left: 15px;
 }
-#footer #mention a {
+#footer_content #mention a {
   text-decoration: none;
   color: #ffd000;
   font-size: 30px;
 }
-#footer #mention:hover {
+#footer_content #mention:hover {
   animation: shake 0.5s infinite;
 }
 @keyframes shake {
@@ -1189,15 +1189,15 @@ td:not([align]), th:not([align]) {
     transform: translate3d(-4px, 0, 0);
   }
 }
-#footer #contact {
+#footer_content #contact {
   margin-right: 15px;
 }
-#footer #contact a {
+#footer_content #contact a {
   text-decoration: none;
   color: #ffd000;
   font-size: 30px;
 }
-#footer #contact:hover {
+#footer_content #contact:hover {
   animation: shake 0.5s infinite;
 }
 @keyframes shake {
