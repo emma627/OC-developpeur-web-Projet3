@@ -783,6 +783,10 @@ td:not([align]), th:not([align]) {
 #menu4Entrees, #menu4Plats, #menu4Desserts {
     margin-bottom: 5px;
   }
+
+  #footer_content #mention a, #footer_content #contact a {
+    font-size: 20px !important;
+  }
 }
 /*--------------------------------*/
 #wrap-menuEchantee {
